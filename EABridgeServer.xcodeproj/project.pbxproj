@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76317B7D1BCD408200C03D54 /* EAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76317B7C1BCD408200C03D54 /* EAController.swift */; };
+		76317B7F1BCD40FE00C03D54 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76317B7E1BCD40FE00C03D54 /* ExternalAccessory.framework */; };
 		764A73511BCBC12C0016D04F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A73501BCBC12C0016D04F /* AppDelegate.swift */; };
 		764A73531BCBC12C0016D04F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A73521BCBC12C0016D04F /* ViewController.swift */; };
 		764A73561BCBC12C0016D04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764A73541BCBC12C0016D04F /* Main.storyboard */; };
 		764A73581BCBC12C0016D04F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764A73571BCBC12C0016D04F /* Images.xcassets */; };
 		764A735B1BCBC12C0016D04F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764A73591BCBC12C0016D04F /* LaunchScreen.xib */; };
 		764A73671BCBC12C0016D04F /* EABridgeServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A73661BCBC12C0016D04F /* EABridgeServerTests.swift */; };
+		76920FCD1BCBFADA00BF6D54 /* P2PController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76920FCC1BCBFADA00BF6D54 /* P2PController.swift */; };
+		76920FD11BCBFD5300BF6D54 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76920FD01BCBFD5300BF6D54 /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76317B7C1BCD408200C03D54 /* EAController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EAController.swift; sourceTree = "<group>"; };
+		76317B7E1BCD40FE00C03D54 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		764A734B1BCBC12C0016D04F /* EABridgeServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EABridgeServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764A734F1BCBC12C0016D04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		764A73501BCBC12C0016D04F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		764A73601BCBC12C0016D04F /* EABridgeServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EABridgeServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		764A73651BCBC12C0016D04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		764A73661BCBC12C0016D04F /* EABridgeServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EABridgeServerTests.swift; sourceTree = "<group>"; };
+		76920FCC1BCBFADA00BF6D54 /* P2PController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PController.swift; sourceTree = "<group>"; };
+		76920FD01BCBFD5300BF6D54 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76317B7F1BCD40FE00C03D54 /* ExternalAccessory.framework in Frameworks */,
+				76920FD11BCBFD5300BF6D54 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,8 @@
 		764A73421BCBC12C0016D04F = {
 			isa = PBXGroup;
 			children = (
+				76317B7E1BCD40FE00C03D54 /* ExternalAccessory.framework */,
+				76920FD01BCBFD5300BF6D54 /* MultipeerConnectivity.framework */,
 				764A734D1BCBC12C0016D04F /* EABridgeServer */,
 				764A73631BCBC12C0016D04F /* EABridgeServerTests */,
 				764A734C1BCBC12C0016D04F /* Products */,
@@ -79,6 +91,7 @@
 			children = (
 				764A73501BCBC12C0016D04F /* AppDelegate.swift */,
 				764A73521BCBC12C0016D04F /* ViewController.swift */,
+				76920FCB1BCBFAA700BF6D54 /* Classes */,
 				764A73541BCBC12C0016D04F /* Main.storyboard */,
 				764A73571BCBC12C0016D04F /* Images.xcassets */,
 				764A73591BCBC12C0016D04F /* LaunchScreen.xib */,
@@ -110,6 +123,15 @@
 				764A73651BCBC12C0016D04F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76920FCB1BCBFAA700BF6D54 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				76920FCC1BCBFADA00BF6D54 /* P2PController.swift */,
+				76317B7C1BCD408200C03D54 /* EAController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76920FCD1BCBFADA00BF6D54 /* P2PController.swift in Sources */,
 				764A73531BCBC12C0016D04F /* ViewController.swift in Sources */,
 				764A73511BCBC12C0016D04F /* AppDelegate.swift in Sources */,
+				76317B7D1BCD408200C03D54 /* EAController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EABridgeServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EABridgeServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -411,6 +437,7 @@
 				764A736C1BCBC12C0016D04F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		764A736D1BCBC12C0016D04F /* Build configuration list for PBXNativeTarget "EABridgeServerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +446,7 @@
 				764A736F1BCBC12C0016D04F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
